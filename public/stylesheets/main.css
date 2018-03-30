@@ -1,0 +1,57 @@
+html,body {
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    color: Black;
+    font-family: serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.img-thumbnail img {
+    width: 100%;
+}
+
+.img-thumbnail {
+    padding: 0;
+    margin-top: 1em;
+}
+
+.card {
+    margin-top: 1em;
+}
+
+.price {
+    text-align: right;
+}
+
+.content {
+    padding: 2em;
+}
+
+#thumb {
+    width: 100%;
+    height: auto;
+}
+
+#thumb-img {
+    width: 100%;
+    height:150px;
+}
+
+#destroy {
+    display: inline;
+}
+
+#jumbo{
+    margin-top: 1em;
+}
+
+/*.JumboStyle {*/
+/*   font-family: fantasy;*/
+/*}*/
+
+#CommentDestroy{
+    display: inline;
+}

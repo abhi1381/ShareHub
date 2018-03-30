@@ -28,7 +28,8 @@ var authRoutes = require("./routes/index");
      
 
 
- mongoose.connect("mongodb://localhost/yelp_camp");
+ mongoose.connect(process.env.DATABASEURL);
+ //mongoose.connect("mongodb://abhishek:tiwari@ds213239.mlab.com:13239/nodeapp");
 app.use(flash());
 app.use(bodyParser.urlencoded({extended: true}));
 

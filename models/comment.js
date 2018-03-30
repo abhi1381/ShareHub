@@ -1,5 +1,7 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/yelp_camp");
+
+var url = process.env.DATABASEURL;
+ mongoose.connect(url);
 
 var commentSchema =mongoose.Schema({
     text:String,

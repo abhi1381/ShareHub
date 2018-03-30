@@ -27,8 +27,8 @@ var campGroundRoutes = require("./routes/campgrounds");
 var authRoutes = require("./routes/index");
      
 
-
- mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL;
+ mongoose.connect(url);
  
  
 app.use(flash());

@@ -1,4 +1,25 @@
 
     <p style="text-align:center">&copy; CAMPER 2018</p>
+    <script>
+        function myMap() {
+    // body...
+            var pos = {
+                    lat:39.83333,
+                    lng:-98.58334
+                };
+                
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom:4,
+                    center:pos
+                });
+                
+                var marker = new google.maps.Marker({
+                    position:pos,
+                    map:map
+                });
+            
+        }
+                
+    </script>
 </body>
 </html>

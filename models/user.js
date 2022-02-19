@@ -2,9 +2,7 @@ var mongoose = require("mongoose");
 
 var passportLocalMongoose = require("passport-local-mongoose");
 
-var url =
-  process.env.DATABASEURL ||
-  "mongodb+srv://CAMPER:PFiwvnvVYbG1PF0L@camper.7nojm.mongodb.net/camper?retryWrites=true&w=majority";
+var url = process.env.DATABASEURL;
 mongoose.connect(url);
 
 var UserSchema = mongoose.Schema({

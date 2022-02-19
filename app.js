@@ -13,8 +13,7 @@ var campGroundRoutes = require("./routes/campgrounds");
 var authRoutes = require("./routes/index");
 
 var url =
-  process.env.DATABASEURL ||
-  "mongodb+srv://CAMPER:PFiwvnvVYbG1PF0L@camper.7nojm.mongodb.net/camper?retryWrites=true&w=majority";
+  process.env.DATABASEURL;
 mongoose.connect(url);
 
 app.use(flash());

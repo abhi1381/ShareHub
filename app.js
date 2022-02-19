@@ -13,7 +13,8 @@ var campGroundRoutes = require("./routes/campgrounds");
 var authRoutes = require("./routes/index");
 
 var url = process.env.DATABASEURL;
-mongoose.connect(url);
+console.log(url);
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(flash());
 app.use(bodyParser.urlencoded({ extended: true }));

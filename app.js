@@ -12,8 +12,7 @@ var commentRoutes = require("./routes/comments");
 var campGroundRoutes = require("./routes/campgrounds");
 var authRoutes = require("./routes/index");
 
-var url =
-  process.env.DATABASEURL;
+var url = process.env.DATABASEURL;
 mongoose.connect(url);
 
 app.use(flash());
@@ -52,6 +51,6 @@ app.use("/campGrounds/:id/comments", commentRoutes);
 app.use("/campGrounds", campGroundRoutes);
 app.use("/", authRoutes);
 
-app.listen(process.env.PORT || 3000, process.env.IP, function () {
+app.listen(process.env.PORT, function () {
   console.log("server started");
 });
